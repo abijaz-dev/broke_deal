@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Cascading Style Sheet -->
     <link rel="stylesheet" href="style.css">
-
     <!-- GoogleFontsApi -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
 
     <title>BROKEDEAL - A Establishment of Developer's Group</title>
 </head>
@@ -23,12 +27,12 @@
         <div class="container">
             <div class="nav_row">
                 <!-- LOGO -->
-                <div class="nav_logo">
-                    <h1 class="main"><span>BROKE</span>DEAL <span>.</span></h1>
+                <div class="nav-logo">
+                    <h1 class="logo-text"><span>BROKE</span>DEAL <span>.</span></h1>
                 </div>
                 <!-- NAVBAR ITEMS -->
-                <div class="navbar_items">
-                    <ul class="item_list">
+                <div class="navbar-items">
+                    <ul class="item-lists">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Our Services</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -47,7 +51,7 @@
                 <div class="main-text">
                     <h2 class="heading">Choose your unique offer</h2>
                     <p class="lead-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia iure aliquid minus? Aliquam incidunt, illum sequi dolores maxime consequuntur qui non debitis eum in?
+                        - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum mollitia iure aliquid minus? Aliquam incidunt, illum sequi dolores maxime consequuntur qui non debitis eum in?
                     </p>
                 </div>
                 <!-- USER SUBSCRIBTION FORM -->
@@ -55,13 +59,13 @@
                     <form action="#" class="form">
                         <h2 class="form-heading">Subscribe Offer</h2>
                         <div class="form-col">
-                            <input type="text" class="name" placeholder="Enter your name">
+                            <input type="text" class="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-col">
-                            <input type="text" class="email" placeholder="Enter your e-mail">
+                            <input type="text" class="email" placeholder="Enter your e-mail" required>
                         </div>
                         <div class="form-col">
-                            <input type="text" class="remarks" placeholder="Remarks...">
+                            <input type="text" class="remarks" placeholder="Remarks..." required>
                         </div>
                         <button class="btn-subscribe">Subscribe</button>
                     </form>
@@ -78,7 +82,7 @@
                 <h3 class="heading">Our Services</h3>
             </div>
             <!-- CARDS ROW -->
-            <div class="card-row">
+            <div class="card_row">
                 <div class="card-col">
                     <div class="content">
                         <img src="img/customer_services.png" alt="customer">
@@ -115,13 +119,13 @@
         <div class="container">
             <div class="about_row">
                 <!-- HEADINGS -->
-                <div class="about_heading">
+                <div class="about-heading">
                     <h3 class="heading">About Us</h3>
                     <p class="lead-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque, dolorem ipsam maiores explicabo repellat at corporis magnam. Modi excepturi architecto perferendis at quos error! Quis quidem tempora fuga labore. Laboriosam reiciendis nihil nulla non modi ratione voluptate debitis quos error illum. Doloribus ab veniam officia natus mollitia, totam ex delectus.</p>
-                    <a href="#" class="btn_read_more">Read More...</a>
+                    <a href="#" class="btn-read-more">Read More...</a>
                 </div>
                 <!-- IMAGE -->
-                <img src="img/about.png" alt="about_us" class="about_img">
+                <img src="img/about.png" alt="about-us" class="about-img">
             </div>
         </div>
     </section>
@@ -129,7 +133,7 @@
     <!-- CONTACT US SECTION -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact_heading">
+            <div class="contact-heading">
                 <h3 class="heading">Contact Us</h3>
                 <p class="lead-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum. Sunt laborum incidunt ducimus maiores ex alias id nam nemo tempora cupiditate minima molestiae dicta blanditiis, a eaque provident optio.</p>
             </div>
@@ -137,20 +141,41 @@
             <!-- FORM -->
             <form action="#" class="contact-form">
                 <div class="form-col">
-                    <input type="text" class="name" placeholder="Enter your name">
+                    <input type="text" class="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-col">
-                    <input type="email" class="email" placeholder="Enter your e-mail">
+                    <input type="email" class="email" placeholder="Enter your e-mail" required>
                 </div>
                 <div class="form-col">
-                    <input type="text" class="address" placeholder="Enter your address">
+                    <input type="text" class="address" placeholder="Enter your address" required>
                 </div>
                 <div class="form-col">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message..."></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Type your message..." required></textarea>
                 </div>
-                <a href="#" class="contact-button">Submit</a>
+                <button class="contact-button">Submit</button>
             </form>
         </div>
     </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_display">
+                <div class="footer-text">
+                    <h3 class="copyright">&copy; 2023 | All Right Reserved. Design by Agustin Addie.</h3>
+                </div>
+                <!-- SOCIAL LINKS -->
+                <div class="social-icon">
+                    <ul class="icon_row">
+                    <li><a href="https://www.facebook.com/the.craftsman.squad"><i class="fa-brands fa-facebook social-link"></i></a></li>
+                    <li><a href="https://www.instagram.com/the.craftsman.inst/"><i class="fa-brands fa-instagram social-link"></i></a></li>
+                    <li><a href="https://github.com/abdullahijaz-dev"><i class="fa-brands fa-github social-link"></i></a></li>
+                    <li><a href="https://discord.com/users/795948039083655189"><i class="fa-brands fa-discord social-link"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
 </body>
 </html>
